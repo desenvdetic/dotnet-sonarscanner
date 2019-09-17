@@ -11,5 +11,5 @@ RUN update-ca-certificates \
     dirmngr \
     oracle-java12-installer \
     oracle-java12-set-default \
-&& dotnet tool install --global dotnet-sonarscanner \
-&& export PATH="$PATH:/root/.dotnet/tools"
+&& export PATH="$PATH:/root/.dotnet/tools" \
+&& dotnet tool install --global dotnet-sonarscanner
