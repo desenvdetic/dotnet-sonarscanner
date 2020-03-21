@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2
 
+ENV TZ "America/Porto_Velho"
+
 COPY ca-trust/*.crt /usr/local/share/ca-certificates/
 
 RUN update-ca-certificates \
