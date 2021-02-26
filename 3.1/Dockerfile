@@ -12,4 +12,4 @@ RUN update-ca-certificates \
     && apt-get install -y --no-install-recommends dirmngr \
     && apt-get install -y --no-install-recommends nodejs \
     && export PATH="$PATH:/root/.dotnet/tools" \ 
-    && dotnet tool install --global dotnet-sonarscanner
+    && dotnet tool install --global dotnet-sonarscanner --version 5.0.4
